@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+  }
+  
+  .indian-flag {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr; 
+    width: 100vw; 
+    height: 100vh; 
+    border: 1px solid #000; 
+  }
+  
+  .saffron-stripe {
+    background-color: #FF9933; 
+  }
+  
+  .white-stripe {
+    background-color: #ffffff; 
+    position: relative;
+  }
+  
+  .chakra-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .imagee {
+    position: relative;
+    max-width: 20%; 
+    max-height: 100%; 
+    display: block; 
+    margin: auto; 
+  }
+  
+  .green-stripe {
+    background-color: #138808; 
+  }
+  
+  .container {
+    width: 100%;
+    height : 100%;
+  }
+
+  .map {
+    position: sticky;
+    /* height: 100%; */
+    width: 30%;
+  }

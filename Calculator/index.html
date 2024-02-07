@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <center>
+        <div class = "calculator">
+            <form name="form">
+                <input class="inputDisplay"> 
+                <table>
+                    <tr>
+                        <td><input type="button" value="C" onclick="clearInput()" style = "background-color: red"></td>
+                        <td><input type="button" value="Del" onclick="deleteCharacter()"></td>
+                        <td><input type="button" value="/" onclick="insertCharacter('/')"></td>
+                        <td><input type="button" value="x" onclick="insertCharacter('*')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" onclick="insertCharacter(7)"></td>
+                        <td><input type="button" value="8" onclick="insertCharacter(8)"></td>
+                        <td><input type="button" value="9" onclick="insertCharacter(9)"></td>
+                        <td><input type="button" value="-" onclick="insertCharacter('-')"></td>
+                </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="insertCharacter(4)"></td>
+                        <td><input type="button" value="5" onclick="insertCharacter(5)"></td>
+                        <td><input type="button" value="6" onclick="insertCharacter(6)"></td>
+                        <td><input type="button" value="+" onclick="insertCharacter('+')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" onclick="insertCharacter(1)"></td>
+                        <td><input type="button" value="2" onclick="insertCharacter(2)"></td>
+                        <td><input type="button" value="3" onclick="insertCharacter(3)"></td>
+                        <td rowspan=2><input type="button" value="=" onclick="result()"  style="height: 158px; background-color: green"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="button" value="0" onclick="insertCharacter(0)" style="width: 158px; ;"></td>
+                        <td><input type="button" value="." onclick="insertCharacter('.')"></td>
+                    </tr>
+                    </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
